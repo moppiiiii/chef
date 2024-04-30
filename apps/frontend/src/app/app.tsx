@@ -2,13 +2,16 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { HomePage } from './pages/home/home.page';
 
 import './styles/styles.scss';
+import { DocumentTitleProvider } from './contexts/document-title.context';
 
 export function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-      </Routes>
+      <DocumentTitleProvider>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+        </Routes>
+      </DocumentTitleProvider>
     </BrowserRouter>
   );
 }

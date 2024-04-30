@@ -1,5 +1,13 @@
 import React from 'react';
+import { useDocumentTitle } from '../../contexts/document-title.context';
+import { Header } from '../../components/parts/header/header.parts';
 
 export const HomePage: React.FC = () => {
-  return <div>HomePage</div>;
+  useDocumentTitle('Home');
+  return (
+    <div>
+      <Header />
+      HomePage
+    </div>
+  );
 };
