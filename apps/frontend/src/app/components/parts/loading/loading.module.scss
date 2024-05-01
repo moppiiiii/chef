@@ -2,6 +2,7 @@
   0%, 50% {
     transform: scaleX(1);
   }
+
   51%, 100% {
     transform: scaleX(-1);
   }
@@ -9,16 +10,16 @@
 
 .loadingComponent {
   position: fixed;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
   top: 0;
   left: 0;
   z-index: 100;
-  background: rgba(68, 65, 65, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  background: rgb(68 65 65 / 50%);
 
   .loadingContent {
     .loadingEmoji {
