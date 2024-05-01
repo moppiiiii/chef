@@ -8,6 +8,14 @@
   justify-content: center;
   width: 100%;
   height: 48px;
-  color: var(--color-text-primary);
-  background: var(--color-medium-gray);
+  padding: 8px 16px;
+  color: #000;
+  background: #fff;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 20%);
+}
+
+@media (width <= 375px) {
+  .headerComponent {
+    justify-content: start;
+  }
 }

@@ -34,3 +34,20 @@
 
   }
 }
+
+@media (width <= 375px) {
+  .loadingComponent {
+    .loadingContent {
+      .loadingEmoji {
+        font-size: 48px;
+        animation: flip 0.5s infinite steps(2, end);
+      }
+
+      .loadingWord {
+        font-size: 16px;
+        color: white;
+      }
+
+    }
+  }
+}
