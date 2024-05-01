@@ -6,3 +6,5 @@ pre-commit:
       run: npm run lint:check && git add {staged_files}
     format:fix:
       run: npm run format:fix && git add {staged_files}
+    style:fix:
+      run: npm run style:fix && git add {staged_files}
