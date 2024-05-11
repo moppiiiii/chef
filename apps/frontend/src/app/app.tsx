@@ -4,6 +4,7 @@ import { HomePage } from './pages/home/home.page';
 import './styles/styles.scss';
 import { DocumentTitleProvider } from './contexts/document-title.context';
 import { NotFoundPage } from './pages/not-found/not-found.page';
+import { RecipeRegistrationPage } from './pages/recipe-registration/recipe-registration.page';
 
 export function App() {
   return (
@@ -11,6 +12,7 @@ export function App() {
       <DocumentTitleProvider>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/recipe-registration" element={<RecipeRegistrationPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </DocumentTitleProvider>
