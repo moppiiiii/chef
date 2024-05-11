@@ -1,13 +1,21 @@
 .headerComponent {
   position: sticky;
-  width: 100%;
-  height: 48px;
   top: 0;
   left: 0;
   z-index: 10;
   display: flex;
-  justify-content: center;
   align-items: center;
-  background: var(--color-medium-gray);
-  color: var(--color-text-primary);
+  justify-content: center;
+  width: 100%;
+  height: 48px;
+  padding: 8px 16px;
+  color: #000;
+  background: #fff;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 20%);
+}
+
+@media (width <= 375px) {
+  .headerComponent {
+    justify-content: start;
+  }
 }
