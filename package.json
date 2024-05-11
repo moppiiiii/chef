@@ -4,13 +4,24 @@
   "license": "MIT",
   "scripts": {
     "sb": "nx run frontend:storybook",
+    "gql:gen": "graphql-codegen --config codegen.yml",
     "start": "nx run-many --target serve --all --parallel",
     "build": "nx run-many --target build --all --parallel",
-    "gql:gen": "graphql-codegen --config codegen.yml",
     "lint:check": "nx run-many --target lint --all --parallel",
-    "format:check": "prettier --check \"apps/**/*.{js,ts,tsx}\"",
-    "format:fix": "prettier --write \"apps/**/*.{js,ts,tsx}\"",
-    "style:fix": "stylelint --fix \"apps/frontend/**/*.scss\""
+    "lint:fix": "nx run-many --target lint --fix --all --parallel",
+    "format:check": "nx run-many --target format:check --all --parallel",
+    "format:fix": "nx run-many --target format:fix --all --parallel",
+    "backend:prettier:check": "prettier --check \"apps/backend/**/*.{js,ts,tsx}\"",
+    "backend-e2e:prettier:check": "prettier --check \"apps/backend-e2e/**/*.{js,ts,tsx}\"",
+    "frontend:prettier:check": "prettier --check \"apps/frontend/**/*.{js,ts,tsx}\"",
+    "frontend-e2e:prettier:check": "prettier --check \"apps/frontend-e2e/**/*.{js,ts,tsx}\"",
+    "frontend:stylelint:check": "stylelint \"apps/frontend/**/*.scss\"",
+    "backend:prettier:fix": "prettier --write \"apps/backend/**/*.{js,ts,tsx}\"",
+    "backend-e2e:prettier:fix": "prettier --write \"apps/backend-e2e/**/*.{js,ts,tsx}\"",
+    "frontend:prettier:fix": "prettier --write \"apps/frontend/**/*.{js,ts,tsx}\"",
+    "frontend-e2e:prettier:fix": "prettier --write \"apps/frontend-e2e/**/*.{js,ts,tsx}\"",
+    "frontend:stylelint:fix": "stylelint --fix \"apps/frontend/**/*.scss\"",
+    "init:lefthook": "lefthook install"
   },
   "private": true,
   "dependencies": {
