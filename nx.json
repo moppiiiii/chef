@@ -87,5 +87,5 @@
       }
     }
   },
-  "nxCloudAccessToken": "MmRkYjRkZDktN2EwMS00YjRlLTk0ZDItM2Q1NWVjMjIyNDk5fHJlYWQtd3JpdGU="
+  "neverConnectToCloud": true
 }
