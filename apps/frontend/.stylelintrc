@@ -12,7 +12,6 @@
     "scss/at-rule-no-unknown": true,
     "selector-class-pattern": "[a-z0-9\\-_]+",
     "color-hex-length": "short",
-    "max-nesting-depth": 2,
     "no-duplicate-selectors": true
   }
 }

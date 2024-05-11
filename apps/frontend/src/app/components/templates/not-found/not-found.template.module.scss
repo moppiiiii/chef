@@ -1,10 +1,23 @@
 .notFoundTemplateContainer {
-  .notFoundContentContainer {
+  > .notFoundContentContainer {
     display: flex;
+    flex-direction: column;
+    gap: 24px;
     align-items: center;
     justify-content: center;
     max-width: 1120px;
     padding: 60px 0;
     margin-inline: auto;
+
+    > .notFoundTitle {
+      display: flex;
+      flex-direction: column;
+      gap: 36px;
+      align-items: center;
+
+      > .notFoundSigh {
+        font-size: 60px;
+      }
+    }
   }
 }
