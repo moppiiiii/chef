@@ -2,7 +2,7 @@ pre-commit:
   commands:
     audit:
       run: npm audit
-    lint:check:
+    lint:fix:
       run: npm run lint:check && git add {staged_files}
-    format:check:
+    format:fix:
       run: npm run format:check && git add {staged_files}

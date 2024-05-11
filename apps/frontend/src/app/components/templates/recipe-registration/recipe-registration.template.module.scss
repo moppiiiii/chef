@@ -1,0 +1,11 @@
+.recipeRegistrationTemplateContainer {
+  > .recipeRegistrationContentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1120px;
+    padding: 60px 0;
+    margin-inline: auto;
+  }
+}
