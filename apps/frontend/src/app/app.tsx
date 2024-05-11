@@ -5,6 +5,7 @@ import './styles/styles.scss';
 import { DocumentTitleProvider } from './contexts/document-title.context';
 import { NotFoundPage } from './pages/not-found/not-found.page';
 import { RecipeRegistrationPage } from './pages/recipe-registration/recipe-registration.page';
+import { RecipeSearchPage } from './pages/recipe-search/recipe-search.page';
 
 export function App() {
   return (
@@ -13,6 +14,7 @@ export function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/recipe-registration" element={<RecipeRegistrationPage />} />
+          <Route path="/recipe-search" element={<RecipeSearchPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </DocumentTitleProvider>
